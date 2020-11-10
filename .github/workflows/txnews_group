@@ -23,12 +23,6 @@ jobs:
      TXNEWS_SIGN_EXILE: ${{ secrets.TXNEWS_SIGN_EXILE }}
      TXNEWS_COOKIE_EXILE: ${{ secrets.TXNEWS_COOKIE_EXILE }}
      TXNEWS_VIDEO_EXILE: ${{ secrets.TXNEWS_VIDEO_EXILE }}
-     PUSH_KEY: ${{ secrets.PUSH_KEY }}
-     BARK_PUSH: ${{ secrets.BARK_PUSH }}
-     TXNEWS_NOTIFY_CONTROL: ${{ secrets.TXNEWS_NOTIFY_CONTROL }}
-     TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
-     TG_USER_ID: ${{ secrets.TG_USER_ID }}
-     BARK_SOUND: ${{ secrets.BARK_SOUND }}
     steps:
       - uses: actions/checkout@v1
       - name: Use Node.js 12.x
