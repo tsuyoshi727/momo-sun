@@ -34,8 +34,7 @@ jobs:
           npm install
           
       - name: '运行 【腾讯28】'
-        if: 
-            env.TXNEWS_SIGN_28
+        if: env.TXNEWS_SIGN_28
             env.TXNEWS_COOKIE_28
             env.TXNEWS_VIDEO_28
         run: |
@@ -46,8 +45,7 @@ jobs:
           TXNEWS_VIDEO: ${{ secrets.TXNEWS_VIDEO_28 }}
 
       - name: '运行 【腾讯wx】'
-        if: 
-            env.TXNEWS_SIGN_wx
+        if: env.TXNEWS_SIGN_wx
             env.TXNEWS_COOKIE_wx
             env.TXNEWS_VIDEO_wx
         run: |
@@ -58,8 +56,7 @@ jobs:
           TXNEWS_VIDEO: ${{ secrets.TXNEWS_VIDEO_wx }}
           
       - name: '运行 【腾讯exile】'
-        if: 
-            env.TXNEWS_SIGN_exile
+        if: env.TXNEWS_SIGN_exile
             env.TXNEWS_COOKIE_exile
             env.TXNEWS_VIDEO_exile
         run: |
