@@ -63,7 +63,7 @@ jobs:
           TXNEWS_COOKIE: ${{ secrets.TXNEWS_COOKIE_wx }}
           TXNEWS_VIDEO: ${{ secrets.TXNEWS_VIDEO_wx }}
           
-         - name: '运行 【腾讯wx】'
+         - name: '运行 【腾讯exile】'
         if: 
             env.TXNEWS_SIGN_exile
             env.TXNEWS_COOKIE_exile
